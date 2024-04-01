@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>calculacte</title>
+</head>
+<body>
+<main>
+    <h2>
+        <span th:text="'Калькулятор отпускных'"></span>
+    </h2>
+    <form action="#" th:action="@{/calculacte}" method="POST">
+        <label>Средняя зарплата</label>
+        <input type="number"  id="salary" name="salary" />
+        <label>Дата начала</label>
+        <input type="date" id="stdate" name="stdate"  />
+        <label>Дата конца</label>
+        <input type="date" id="enddate" name="enddate" />
+        <input type="submit" value="Submit" />
+    </form>
+    <span th:text="${message}"></span>
+</main>
+</body>
+</html>
